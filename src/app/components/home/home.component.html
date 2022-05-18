@@ -1,0 +1,112 @@
+<div class="area">
+  <div id="home" class="context">
+    <div class="px-4 max-w-6xl mx-auto">
+      <div class="my-2 p-3">Hey! I am</div>
+    </div>
+    <div class="px-4 max-w-6xl mx-auto">
+      <div class="my-4 p-3 text-7xl font-bold title">Loreto Álvarez.</div>
+    </div>
+    <div class="text-animation px-4 max-w-6xl mx-auto text-3xl">
+      <!-- <div class="pl-3">Soy</div> -->
+      <ul>
+        <li>Web Developer!</li>
+        <li>Front-end Lover!</li>
+        <li>Account Manager!</li>
+      </ul>
+    </div>
+    <div class="px-4 max-w-6xl mx-auto mt-2 flex">
+      <div class="pl-3 text-sm">See more about me!</div>
+      <img
+        class="pl-2 arrow"
+        src="https://res.cloudinary.com/loretoavoces/image/upload/v1652361588/prueba/down-arrow_frandq.png"
+      />
+    </div>
+  </div>
+  <ul class="circles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
+<div class="height-section">
+  <div id="portfolio" class="title mb-10">
+    <h1>Portfolio</h1>
+  </div>
+  <div class="px-4 max-w-3xl mx-auto" *ngFor="let project of projects">
+    <div class="h-30 my-4 py-3 px-9 border-2 shadow-lg card">
+      <div class="text-center">
+        <div class="header-card">
+          <div class="mb-2">{{ project.name }}</div>
+          <a href="https://github.com/loretoavoces" target="_blank">
+            <img
+              alt="github-logo"
+              src="https://res.cloudinary.com/loretoavoces/image/upload/v1652361579/prueba/github_3_oyyfko.png"
+            />
+          </a>
+        </div>
+        <div class="font-mono text-sm">{{ project.description }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="height-section">
+  <div id="about" class="title mb-12 mt-10">
+    <h1>About</h1>
+  </div>
+  <div class="px-4 max-w-3xl mx-auto about">
+    <div class="px-6">
+      <span>&lt;p&gt;</span>I´m Full Stack Web Developer, graduated on the
+      Intensive Web Development Bootcamp at Ironhack Madrid. Currently working
+      at NTTDATA Spain as a Front-end Developer.<br />I have also studied
+      Advertising and Public Relations. The past three years I worked as an
+      Account Executive in different advertising agencies in Madrid. Managing
+      among the main accounts, Opel, Burger King and Médicos del Mundo, working
+      with large teams, improving my organizational skills always focused on
+      detail.<span>&lt;/p&gt;</span>
+    </div>
+  </div>
+</div>
+<div class="px-28 max-w-3xl mx-auto cvSection">
+  <div class="h-30 my-4 py-3 px-9 border-2 shadow-lg card" (click)="printPdf()">
+    <div class="flex items-center text-center font-bold">
+      <div class="text-sm mr-4">
+        If you want to know more about me click to see my cv
+      </div>
+      <img
+        src="https://res.cloudinary.com/loretoavoces/image/upload/v1652361100/prueba/cv_xt14hk.png"
+      />
+    </div>
+  </div>
+</div>
+<div class="footer flex items-center mt-12 py-10" id="contact">
+  <div class="flex px-3 mt-3 justify-end items-center">
+    <div class="mr-4">
+      <a href="https://github.com/loretoavoces" target="_blank">
+        <img
+          src="https://res.cloudinary.com/loretoavoces/image/upload/v1652361579/prueba/github_3_oyyfko.png"
+        />
+      </a>
+    </div>
+    <div class="mr-4">
+      <a
+        href="https://www.linkedin.com/in/loreto-alvarez-voces/"
+        target="_blank"
+      >
+        <img
+          class="linkedin"
+          src="https://res.cloudinary.com/loretoavoces/image/upload/v1652361583/prueba/linkedin_3_pie5oj.png"
+        />
+      </a>
+    </div>
+    <div class="flex text-sm sendEmail">
+      <a href="mailto: loretoavoces@gmail.com" target="_blank" target="_blank">
+        loretoavoces@gmail.com
+      </a>
+    </div>
+  </div>
+</div>
